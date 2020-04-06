@@ -22,7 +22,7 @@ namespace PWNTech.GeonamesHelpers.Test
 		public void TestDownload()
 		{
 			using var downloadHelper = new DownloadHelper();
-			var response = downloadHelper.DownloadToTempFile($"{DemoData.DumpBaseURL}IT.zip").ConfigureAwait(false).GetAwaiter().GetResult();
+			var response = downloadHelper.DownloadToTempFile($"{Constants.DumpBaseURL}IT.zip").ConfigureAwait(false).GetAwaiter().GetResult();
 			TestContext.WriteLine($"Temp file: {response}");
 
 			Assert.IsTrue(!string.IsNullOrWhiteSpace(response)); // Ensure file path been returned
