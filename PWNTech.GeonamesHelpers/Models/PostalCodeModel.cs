@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PWNTech.GeonamesHelpers.Models
 {
-	public class GeonamePostalCodeModel
+	public class PostalCodeModel
 	{
 		[MaxLength(2)] public string CountryCode { get; set; }
 		[MaxLength(20)] public string PostalCode { get; set; }
